@@ -1,5 +1,7 @@
-$(function () {
-    $(".devour-burger").on("click", function (event) {
+
+
+$(document).ready(function(){
+    $(".change-devour").on("click", function (event) {
         var id = $(this).data("id");
         var newDevourState = {
             devoured: 1
@@ -22,11 +24,11 @@ $(function () {
 
     });
 
-    $(".create-burger").on("submit", function (event) {
+    $(".create-burger").on("click", function (event) {
         event.preventDefault();
 
         var newBurger = {
-            burger_name: ("#newBurger").val().trim()
+            burger_name: $("#newBurger").val().trim()
         };
         console.log(newBurger);
 
@@ -36,9 +38,12 @@ $(function () {
         }).then(
             function () {
                 console.log("you made a new burger, YUM!");
-                loction.reload();
+                location.reload();
             }
         );
 
     });
+
 });
+
+    

@@ -29,9 +29,35 @@ h1 {
     margin: 0 auto;
 }
 .card {
-    background-color: pink;
+    background-color: rgb(238, 172, 114);
     border: none;
 }
 body {
-    background-color: pink;
+    background-color:  rgb(238, 172, 114);
+}
+li {
+
+   
+   padding: 5px 5px 0 5px;
+}
+.change-devour {
+   margin-left: 20px;
+   font-family: 'Asap', sans-serif;
+   font-size: 14px;
+} 
+ul {
+    list-style: none;
+    font-family: 'Asap', sans-serif;
+    font-size: 14pt;
+    font-weight: 700;
+}
+
+.eatenBurgers {
+  
+    text-align: right;
+}
+
+.newBurgers {
+   
+    text-align: right;
 }
